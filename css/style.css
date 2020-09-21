@@ -1,0 +1,538 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* сброс оттупов боди под шапкой */
+body {
+    font-family: "Open Sans", Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.46;
+    margin: 0;
+    padding: 0;
+
+}
+.page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 64px;
+
+}
+
+/* сброс стилей ссылок */
+a {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-container{
+    width:1170px;
+    padding:0 15px;
+    margin:0 auto;
+    position:relative;
+}
+
+/* контейнер сетка*/
+.container{
+    width:1170px;
+    padding:0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+/* заголовок в шапке */
+.head-title-container {
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    width: 650px;
+    margin:125px auto 0;
+}
+
+.head-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:45px;
+    line-height:75px;
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+.head-title:last-child{
+    margin-bottom:0;
+}
+
+
+/* картинка шапки */
+.head {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+    background-color: #424742;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    min-width:1200px;
+    padding-bottom:145px;
+    padding-top:36px;
+}
+
+
+/* маска зетемнения*/
+.head::before {
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    color:#ffffff;
+}
+
+
+/* контейнер меню и лого в хедере */
+.header_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.header-logo {
+    width: 184px;
+    z-index: 2;
+}
+
+.menu {
+    font-size: 13px;
+    text-transform: uppercase;
+
+}
+
+.tags-menu-link{
+    text-decoration: none;
+    display: block;
+    border: 3px solid #eeeeee;
+    color: black;
+    padding-right:10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    margin-right: 4px;
+}
+
+
+/* сброс стилей списка меню */
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* расстояния между пунктами меню */
+.menu-list-item:nth-child(n + 2) {
+    margin-left: 35px;
+}
+
+.post-tags{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* расстояния между пунктами меню */
+.post-tag:not(last-child) {
+    margin-right: 20px;
+}
+
+
+/* блок основного контента */
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 64px;
+
+
+}
+
+
+/* контейнер правое контентное поле */
+.sidebar {
+    width: 267px;
+}
+
+
+/* картинка основного блока */
+.post-image {
+    width: 381px;
+    margin-right: 30px;
+}
+
+.post-container:not(:last-child) {
+    margin-bottom: 58px;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: row;
+    width: 778px;
+    align-items: flex-start;
+}
+
+
+/* теги анонсов */
+.post-tags {
+    display: flex;
+    list-style-type: none;
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #b59f5b;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+.post-title {
+    color: black;
+    line-height: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom:38px;
+
+}
+
+
+/* текст анонса */
+.post-content {
+    font-family: "Open Sans", Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.46;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.post-tagline{
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom:50px;
+
+}
+
+/* стилизация дата */
+.post-date {
+    color: #888888;
+    display: inline-block;
+    padding-right: 12px;
+}
+
+
+/* стилизация автора */
+.post-author {
+    color: #000000;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+/* картинка новых постов */
+.newpost-images {
+    width: 72px;
+    margin-right: 20px;
+}
+
+.sidebar-title{
+    color: #000000;
+    line-height: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom:30px;
+}
+
+.sidebar-title::after{
+    content:"";
+    background-color: #e1d9bd;
+    height: 3px;
+    width: 66px;
+    margin-top: 14px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.new-post-link {
+    color: #000000;
+    line-height: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+/* блок  */
+.newpost-conteiner {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 14px;
+    align-items: flex-start;
+    line-height: 0;
+}
+
+.newpost-conteiner:not(:last-child){
+   margin-bottom: 21px;
+}
+
+/* дата новых постов */
+.date-aside {
+    margin: 0;
+    line-height: normal;
+}
+
+.sidebar-block:nth-child(n+2){
+}
+
+.sidebar-block:nth-child(n+2){
+    margin-top:60px;
+}
+
+/*------------------------------------------------------------ поиск */
+.search {
+    display:flex;
+
+}
+
+.input{
+    width: 100%;
+    height: 50px;
+    border: 0;
+    background: #f4f7f6;
+    color: #6f6f6f;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.button{
+    height: 50px;
+    border: none;
+    background: #b59f5b;
+    cursor: pointer;
+    font-weight: 700;
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.visual-hidden{
+    position: absolute;
+    clip: rect(1px,1px,1px,1px);
+    width: 1px;
+    height: 1px;
+}
+
+.search-lable .mail-lable .search-button{
+    flex-grow:1;
+}
+
+ .search-button{
+    width: 50px;
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+    background-size: 18px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* --------------------------------------------------------------подписка */
+.mailing input {
+    width: 255px;
+    height: 50px;
+    padding-left: 10px;
+    color: #6f6f6f;
+}
+
+
+/* кнопка подписки */
+.mail-button {
+    width: 100%;
+}
+
+.form-row:nth-child(n+2){
+margin-top: 20px;
+}
+/* --------------------------------------------------------------подписка */
+.flex-container-tag {
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+
+/* сброс стилей списков тегов */
+.tags-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.tags-list-item{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+/* линии в темах */
+.topic-line {
+    border: none;
+    background-color: #eeeeee;
+    color: black;
+    height: 1px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.topic-list{
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* список тем */
+.topic-list-item {
+    font-weight: 700;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: black;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 14px;
+}
+
+.topic-list-item:nth-child(n+2){
+    padding-top: 14px;
+}
+
+
+.index {
+    vertical-align: super;
+    line-height: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #b59f5b;
+    margin-left: 5px;
+}
+
+
+/* footer */
+.address {
+    background-color: #f4f7f6;
+    padding: 30px;
+}
+
+.footer{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+/* соцсети */
+.socials-link {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-color: #3b5998;
+    background-position: center;
+
+}
+
+.socials-item:nth-child(n+2){
+    margin-left: 30px;
+}
+
+.socials-link-facebook {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
+    background-color: #f4f7f6
+}
+
+.socials-link-twitter {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+    background-color: #f4f7f6;
+}
+
+.socials-link-pinterest {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+    background-color: #f4f7f6;
+}
+
+.socials-link-instagram {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
+    background-color: #f4f7f6;
+}
+
+.socials-link-Tumblr {
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+    background-color: #f4f7f6;
+}
+
+
+.socials {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* стилизация копирайт */
+.copyright {
+    font-size: 12px;
+    color: #999999;
+    margin-top: 74px;
+    text-align: center;
+
+}
+
