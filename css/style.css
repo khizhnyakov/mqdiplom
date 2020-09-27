@@ -1,4 +1,213 @@
-@font-face {
+@media (max-width: 640px) {
+    .head {
+        background-image: url(../images/banner-mobile.jpg);
+    }
+    .trend-blocks{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .head-title-container {
+        margin:20px auto 0;
+    }
+    .menu-burger {
+         fill: #ffffff;
+     }
+    .menu-list-item {
+        display: none;
+    }
+    .menu-container {
+        max-width: 330px;
+        min-height: 550px;
+    }
+    .trend-block{
+        width: 100%;
+    }
+    .trend-block:nth-child(n+2){
+        margin-top: 3px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .post-container {
+        max-width: 330px;
+    }
+    .post-container {
+        flex-direction: column;
+    }
+    .post-content {
+        border-bottom: 2px solid #eeeeee;
+    }
+    .post-tags{
+        padding-top: 17px;
+    }
+    .sidebar {
+        max-width: 330px;
+    }
+    .shop-block:nth-child(n+2){
+        margin-top: 30px;
+    }
+    .shop-blocks {
+        max-width: 330px;
+    }
+    .head-title {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 217px;
+    }
+    .header-logo {
+        display: none;
+    }
+    .header-logo-640{
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 180px;
+        display:flex;
+        justify-content: center;
+}
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+    .head {
+        background-image: url(../images/banner-bg-tablet.jpg);
+    }
+    .header-logo-640 {
+        display: none;
+    }
+    .menu-list-item {
+        display: none;
+    }
+    .head-title-container {
+        margin:125px auto 0;
+        line-height: 55px;
+    }
+    .trend-blocks{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .trend-block{
+        width: calc(50% - 4px);
+    }
+    .trend-block{
+        width: calc(2n+2);
+        margin-top: 4px;
+    }
+    .trend-block:nth-child(even){
+        margin-left: 4px;
+    }
+    .post-container {
+        flex-direction: column;
+    }
+    .container {
+        width: 700px;
+    }
+    .post-container {
+        width: 380px;
+    }
+    .post-content {
+    border-bottom: 2px solid #eeeeee;
+    }
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+    .sidebar {
+        width: 267px;
+    }
+    .menu-burger {
+        fill: #ffffff;
+    }
+    .menu-container {
+        max-width: 700px;
+    }
+    .head-title {
+        font-size: 40px;
+        line-height: 75px;
+    }
+    .shop-blocks {
+        max-width: 700px;
+    }
+    .shop-block:nth-child(n+3){
+        margin-top: 30px;
+    }
+    .post-image {
+        margin-right: 30px;
+    }
+    .post-tags{
+        padding-top: 17px;
+    }
+}
+
+
+@media (min-width: 1200px)  {
+    .head {
+        background-image: url(../images/banner-bg.jpg);
+    }
+    .header-logo-640 {
+        display: none;
+    }
+    .head-title-container {
+        margin:125px auto 0;
+    }
+    .trend-block{
+        width: 25%;
+    }
+    .trend-block:nth-child(n+2){
+        margin-left: 4px;
+    }
+    .post-container {
+        flex-direction: row;
+    }
+    .container{
+        width:1170px;
+    }
+    .post-container {
+        width: 778px;
+    }
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+    .sidebar {
+        width: 267px;
+    }
+    .menu-burger {
+        display: none;
+    }
+    .menu-container {
+        max-width: 1170px;
+    }
+    .head-title {
+        font-size: 45px;
+        line-height:75px;
+    }
+    .shop-blocks {
+        max-width: 1170px;
+    }
+    .shop-block:nth-child(n+4){
+        margin-top: 30px;
+    }
+    .post-image {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 641px) and (max-width:  1200px) and (orientation: landscape){
+}
+
+@media (min-width: 641px) and (max-width:  1200px) and (orientation: portrait){
+}
+
+@media (max-width: 641px) and (orientation: landscape){
+}
+
+@media (max-width: 641px) and (orientation: portrait){
+}
+
+
+
+    @font-face {
     font-family: "Open Sans";
     src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
     font-weight: 400;
@@ -40,7 +249,7 @@ a {
 }
 
 .menu-container{
-    width:1170px;
+    min-width: 340px;
     padding:0 15px;
     margin:0 auto;
     position:relative;
@@ -48,7 +257,6 @@ a {
 
 /* контейнер сетка*/
 .container{
-    width:1170px;
     padding:0 15px;
     margin-left: auto;
     margin-right: auto;
@@ -61,15 +269,12 @@ a {
     text-align: center;
     color: #ffffff;
     position: relative;
-    width: 650px;
-    margin:125px auto 0;
+    max-width: 650px;
 }
 
 .head-title{
     text-transform: uppercase;
     font-weight: 700;
-    font-size:45px;
-    line-height:75px;
     margin-top:0;
     margin-bottom:20px;
 }
@@ -78,19 +283,15 @@ a {
     margin-bottom:0;
 }
 
-
 /* картинка шапки */
 .head {
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
     background-color: #424742;
     background-size: cover;
     background-position: center center;
     position: relative;
-    min-width:1200px;
     padding-bottom:145px;
     padding-top:36px;
 }
-
 
 /* маска зетемнения*/
 .head::before {
@@ -113,6 +314,7 @@ a {
     justify-content: space-between;
     align-items: center;
     color: #ffffff;
+    flex: auto;
 }
 
 .header-logo {
@@ -154,12 +356,121 @@ a {
     margin-left: 35px;
 }
 
+
+/* ----------------------------------------------блок тренд */
+
+.main-title {
+    color: #000000;
+    line-height: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top:64px;
+}
+
+.main-title::after{
+    content:"";
+    background-color: #e1d9bd;
+    height: 3px;
+    width: 66px;
+    margin-top: 25px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.trend-blocks{
+    width: 100%;
+    display: flex;
+
+}
+
+.trend-block{
+    background-color: #424742;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display:flex;
+    align-items: flex-end;
+    height: 318px;
+}
+
+.trend-block-1{
+    background-image: url(../images/trend1.jpg);
+}
+
+.trend-block-2{
+    background-image: url(../images/trend2.jpg);
+}
+
+.trend-block-3{
+    background-image: url(../images/trend3.jpg);
+}
+
+.trend-block-4{
+    background-image: url(../images/trend4.jpg);
+}
+
+.trend-block-1::before, .trend-block-2::before, .trend-block-3::before, .trend-block-4::before{
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    color:#ffffff;
+}
+
+.trend-tags{
+    display: flex;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #b59f5b;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.trend-line-link{
+    color: #ffffff;
+    line-height: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom:38px;
+    position: relative;
+
+}
+
+.trend-content{
+    border: solid;
+    color: #87784e;
+    position: relative;
+    margin-bottom:15px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 32px;
+    padding-right: 32px;
+    align-items: flex-end;
+
+}
+
+/* ----------------------------------------------блок пост */
 .post-tags{
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 /* расстояния между пунктами меню */
@@ -171,24 +482,13 @@ a {
 /* блок основного контента */
 .main {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-top: 64px;
-
-
 }
-
-
-/* контейнер правое контентное поле */
-.sidebar {
-    width: 267px;
-}
-
 
 /* картинка основного блока */
 .post-image {
     width: 381px;
-    margin-right: 30px;
 }
 
 .post-container:not(:last-child) {
@@ -197,13 +497,19 @@ a {
 
 .post-container {
     display: flex;
-    flex-direction: row;
-    width: 778px;
     align-items: flex-start;
 }
 
 
 /* теги анонсов */
+.post-txt{
+    width: 100%;
+}
+
+.post-image{
+    width: 100%;
+}
+
 .post-tags {
     display: flex;
     list-style-type: none;
@@ -236,8 +542,8 @@ a {
     font-weight: 400;
     font-size: 15px;
     line-height: 1.46;
+    padding-bottom: 24px;
     margin: 0;
-    padding: 0;
     color: black;
 }
 
@@ -274,13 +580,13 @@ a {
 .sidebar-title{
     color: #000000;
     line-height: 18px;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     text-align: center;
     margin-bottom:30px;
 }
 
-.sidebar-title::after{
+.sidebar-title::after, .teg-title::after{
     content:"";
     background-color: #e1d9bd;
     height: 3px;
@@ -318,9 +624,6 @@ a {
 .date-aside {
     margin: 0;
     line-height: normal;
-}
-
-.sidebar-block:nth-child(n+2){
 }
 
 .sidebar-block:nth-child(n+2){
@@ -462,15 +765,89 @@ margin-top: 20px;
     color: #b59f5b;
     margin-left: 5px;
 }
+/* ----------------------------------------------блок shop */
+.shop-blocks {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.shop-block{
+    width: 347px;
+    }
 
-/* footer */
+.shop-image{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.shop-content {
+    border: solid;
+    color: #87784e;
+    padding-top: 56px;
+    padding-bottom: 70px;
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-top: -35px;
+}
+
+.shop-line, .shop-price-actual {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 0;
+    margin-bottom: 20px;
+}
+
+.shop-txt{
+    color: black;
+    font-size: 15px;
+}
+
+.shop-button{
+    width: 140px;
+}
+
+.shop-price-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.shop-line-link{
+    color: #000000;
+}
+
+.shop-old-price{
+    color: black;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 0;
+    margin-bottom: 20px;
+    text-decoration: line-through;
+}
+
+.shop_price{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* _______________________________________________________footer */
 .address {
     background-color: #f4f7f6;
     padding: 30px;
 }
 
-.footer{
+.footer {
     margin-top: 70px;
     margin-bottom: 30px;
 }
@@ -484,16 +861,15 @@ margin-top: 20px;
     background-size: 20px;
     background-color: #3b5998;
     background-position: center;
-
 }
 
-.socials-item:nth-child(n+2){
+.socials-item:nth-child(n + 2) {
     margin-left: 30px;
 }
 
 .socials-link-facebook {
     background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
-    background-color: #f4f7f6
+    background-color: #f4f7f6;
 }
 
 .socials-link-twitter {
@@ -516,7 +892,6 @@ margin-top: 20px;
     background-color: #f4f7f6;
 }
 
-
 .socials {
     display: flex;
     align-items: center;
@@ -526,13 +901,10 @@ margin-top: 20px;
     margin: 0;
 }
 
-
 /* стилизация копирайт */
 .copyright {
     font-size: 12px;
     color: #999999;
     margin-top: 74px;
     text-align: center;
-
 }
-
