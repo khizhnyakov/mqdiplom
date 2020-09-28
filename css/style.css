@@ -31,9 +31,11 @@
     }
     .post-container {
         max-width: 330px;
-    }
-    .post-container {
         flex-direction: column;
+        margin: auto;
+    }
+    .post-container:nth-child(n+2) {
+        margin-top: -25px;
     }
     .post-content {
         border-bottom: 2px solid #eeeeee;
@@ -43,6 +45,7 @@
     }
     .sidebar {
         max-width: 330px;
+        margin: auto;
     }
     .shop-block:nth-child(n+2){
         margin-top: 30px;
@@ -100,13 +103,16 @@
         flex-direction: column;
     }
     .container {
-        width: 700px;
+        max-width: 700px;
     }
     .post-container {
-        width: 380px;
+        max-width: 380px;
     }
     .post-content {
     border-bottom: 2px solid #eeeeee;
+    }
+    .post-container:nth-child(n+2) {
+        margin-top: -25px;
     }
     .main {
         display: flex;
@@ -114,6 +120,7 @@
     }
     .sidebar {
         width: 267px;
+        margin-left: 36px;
     }
     .menu-burger {
         fill: #ffffff;
@@ -160,7 +167,7 @@
         flex-direction: row;
     }
     .container{
-        width:1170px;
+        max-width:1170px;
     }
     .post-container {
         width: 778px;
@@ -170,7 +177,7 @@
         flex-direction: row;
     }
     .sidebar {
-        width: 267px;
+        max-width: 267px;
     }
     .menu-burger {
         display: none;
@@ -633,7 +640,13 @@ a {
 /*------------------------------------------------------------ поиск */
 .search {
     display:flex;
+}
 
+.search-lable {
+    width:100%;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 .input{
@@ -675,7 +688,7 @@ a {
 
  .search-button{
     width: 50px;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+    background-image: url(../svg/search.svg);
     background-size: 18px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -776,7 +789,7 @@ margin-top: 20px;
 }
 
 .shop-block{
-    width: 347px;
+    max-width: 347px;
     }
 
 .shop-image{
@@ -787,10 +800,11 @@ margin-top: 20px;
 }
 
 .shop-content {
+    height: auto;
     border: solid;
     color: #87784e;
     padding-top: 56px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     padding-left: 26px;
     padding-right: 26px;
     margin-top: -35px;
@@ -822,7 +836,7 @@ margin-top: 20px;
 }
 
 .shop-line-link{
-    color: #000000;
+    color: #87784e;
 }
 
 .shop-old-price{
@@ -837,8 +851,9 @@ margin-top: 20px;
 
 .shop_price{
     display: flex;
-    align-items: center;
+    align-items: end;
     flex-direction: column;
+    justify-content: center;
 }
 
 /* _______________________________________________________footer */
@@ -868,27 +883,27 @@ margin-top: 20px;
 }
 
 .socials-link-facebook {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
+    background-image: url("../svg/002-facebook-logo.svg");
     background-color: #f4f7f6;
 }
 
 .socials-link-twitter {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+    background-image: url("../svg/004-twitter.svg");
     background-color: #f4f7f6;
 }
 
 .socials-link-pinterest {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+    background-image: url("../svg/001-pinterest.svg");
     background-color: #f4f7f6;
 }
 
 .socials-link-instagram {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
+    background-image: url("../svg/005-instagram.svg");
     background-color: #f4f7f6;
 }
 
 .socials-link-Tumblr {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+    background-image: url("../svg/003-tumblr.svg");
     background-color: #f4f7f6;
 }
 
