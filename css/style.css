@@ -147,7 +147,7 @@
 }
 
 
-@media (min-width: 1200px)  {
+@media (min-width: 1201px)  {
     .head {
         background-image: url(../images/banner-bg.jpg);
     }
@@ -256,7 +256,6 @@ a {
 }
 
 .menu-container{
-    min-width: 340px;
     padding:0 15px;
     margin:0 auto;
     position:relative;
@@ -787,13 +786,18 @@ margin-top: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.shop-image-block{
+    padding-left: 24px;
+    padding-right: 24px;
+}
 
 .shop-block{
     max-width: 347px;
     }
 
+
 .shop-image{
-    width: 300px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -805,9 +809,11 @@ margin-top: 20px;
     color: #87784e;
     padding-top: 56px;
     padding-bottom: 30px;
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: -35px;
+    position: relative;
+    flex: 1 1 auto;
 }
 
 .shop-line, .shop-price-actual {
@@ -817,6 +823,7 @@ margin-top: 20px;
     font-weight: 700;
     line-height: 0;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .shop-txt{
