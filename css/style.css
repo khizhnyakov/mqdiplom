@@ -1,14 +1,43 @@
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
 @media (max-width: 640px) {
     .head {
         background-image: url(../images/banner-mobile.jpg);
     }
-    .trend-blocks{
-        display:flex;
-        flex-wrap: wrap;
-    }
+
     .head-title-container {
         margin:20px auto 0;
     }
+    .head-title {
+        font-size: 26px;
+        line-height: 36px;
+        margin-bottom: 217px;
+    }
+    .header-logo {
+        display: none;
+    }
+    .header-logo-640{
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 180px;
+        display:flex;
+        justify-content: center;
+    }
+
     .menu-burger {
          fill: #ffffff;
      }
@@ -19,12 +48,7 @@
         max-width: 330px;
         min-height: 550px;
     }
-    .trend-block{
-        width: 100%;
-    }
-    .trend-block:nth-child(n+2){
-        margin-top: 3px;
-    }
+
     .main {
         display: flex;
         flex-direction: column;
@@ -47,28 +71,13 @@
         max-width: 330px;
         margin: auto;
     }
+
     .shop-block:nth-child(n+2){
-        margin-top: 30px;
-    }
+         margin-top: 30px;
+     }
     .shop-blocks {
         max-width: 330px;
     }
-    .head-title {
-        font-size: 26px;
-        line-height: 36px;
-        margin-bottom: 217px;
-    }
-    .header-logo {
-        display: none;
-    }
-    .header-logo-640{
-        max-width: 270px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 180px;
-        display:flex;
-        justify-content: center;
-}
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -119,7 +128,7 @@
         flex-direction: row;
     }
     .sidebar {
-        width: 267px;
+        max-width: 272px;
         margin-left: 36px;
     }
     .menu-burger {
@@ -135,8 +144,17 @@
     .shop-blocks {
         max-width: 700px;
     }
+    .shop-block {
+        width: calc(50% - 5px);
+        display: flex;
+        flex-direction: column;
+    }
+
     .shop-block:nth-child(n+3){
         margin-top: 30px;
+    }
+    .shop-block:nth-child(even) {
+        margin-left: 10px;
     }
     .post-image {
         margin-right: 30px;
@@ -144,6 +162,7 @@
     .post-tags{
         padding-top: 17px;
     }
+
 }
 
 
@@ -177,7 +196,7 @@
         flex-direction: row;
     }
     .sidebar {
-        max-width: 267px;
+        max-width: 272px;
     }
     .menu-burger {
         display: none;
@@ -200,36 +219,74 @@
     }
 }
 
-@media (min-width: 641px) and (max-width:  1200px) and (orientation: landscape){
+@media  only screen and (min-width: 641px) and (max-width:  1200px) and (orientation: landscape){
+    .trend-blocks{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .trend-block{
+        width: calc(25% - 4px);
+    }
+    .trend-block{
+        margin-top: 4px;
+    }
+    .trend-block:nth-child(2n+2){
+    margin-left: 4px;
 }
-
-@media (min-width: 641px) and (max-width:  1200px) and (orientation: portrait){
-}
-
-@media (max-width: 641px) and (orientation: landscape){
-}
-
-@media (max-width: 641px) and (orientation: portrait){
-}
-
-
-
-    @font-face {
-    font-family: "Open Sans";
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Open Sans";
-    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
-    font-weight: 700;
-    font-style: normal;
 }
 
 
-/* сброс оттупов боди под шапкой */
+@media  only screen and (min-width: 641px) and (max-width:  1200px) and (orientation: portrait){
+    .trend-blocks{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .trend-block{
+        width: calc(50% - 4px);
+    }
+    .trend-block{
+        width: calc(2n+2);
+        margin-top: 4px;
+    }
+    .trend-block:nth-child(even){
+        margin-left: 4px;
+
+    }
+}
+
+
+@media only screen and (orientation: landscape) and (max-width: 640px){
+    .trend-blocks{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .trend-block{
+        width: calc(50% - 2px);
+    }
+    .trend-block{
+        width: calc(2n+2);
+        margin-top: 4px;
+    }
+    .trend-block:nth-child(even){
+        margin-left: 4px;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 640px) {
+    .trend-blocks{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .trend-block{
+        width: 100%;
+    }
+    .trend-block:nth-child(n+2){
+        margin-top: 3px;
+    }
+}
+
 body {
     font-family: "Open Sans", Arial,sans-serif;
     font-style: normal;
@@ -238,7 +295,10 @@ body {
     line-height: 1.46;
     margin: 0;
     padding: 0;
-
+}
+h2 {
+    margin: 0;
+    padding: 0;
 }
 .page{
     display: flex;
@@ -249,7 +309,7 @@ body {
 }
 
 /* сброс стилей ссылок */
-a {
+.teg-link {
     outline: none;
     text-decoration: none;
     color: inherit;
@@ -297,6 +357,7 @@ a {
     position: relative;
     padding-bottom:145px;
     padding-top:36px;
+    color: #ffffff;
 }
 
 /* маска зетемнения*/
@@ -325,7 +386,6 @@ a {
 
 .header-logo {
     width: 184px;
-    z-index: 2;
 }
 
 .menu {
@@ -336,15 +396,17 @@ a {
 
 .tags-menu-link{
     text-decoration: none;
+    text-transform: uppercase;
     display: block;
     border: 3px solid #eeeeee;
     color: black;
-    padding-right:10px;
-    padding-left: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-bottom: 5px;
-    margin-right: 4px;
+    padding-right:14px;
+    padding-left: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
 }
 
 
@@ -357,6 +419,15 @@ a {
     margin-bottom: 0;
 }
 
+.menu-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* расстояния между пунктами меню */
 .menu-list-item:nth-child(n + 2) {
     margin-left: 35px;
@@ -364,7 +435,9 @@ a {
 
 
 /* ----------------------------------------------блок тренд */
-
+.posts{
+    max-width: 778px;
+}
 .main-title {
     color: #000000;
     line-height: 0;
@@ -390,7 +463,7 @@ a {
 .trend-blocks{
     width: 100%;
     display: flex;
-
+    justify-content: space-between;
 }
 
 .trend-block{
@@ -454,13 +527,13 @@ a {
     margin-top: 15px;
     margin-bottom:38px;
     position: relative;
-
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .trend-content{
     border: solid;
-    color: #87784e;
-    position: relative;
+    color: #b59f5b;
     margin-bottom:15px;
     margin-left: 25px;
     margin-right: 25px;
@@ -469,7 +542,7 @@ a {
     padding-left: 32px;
     padding-right: 32px;
     align-items: flex-end;
-
+    opacity: 60%;
 }
 
 /* ----------------------------------------------блок пост */
@@ -480,7 +553,7 @@ a {
 }
 
 /* расстояния между пунктами меню */
-.post-tag:not(last-child) {
+.post-tag:not(:last-child) {
     margin-right: 20px;
 }
 
@@ -530,22 +603,17 @@ a {
     flex-wrap: wrap;
 }
 
-.post-title {
+.post-title-link {
     color: black;
     line-height: 0;
     font-size: 20px;
     text-transform: uppercase;
-    margin-top: 15px;
-    margin-bottom:38px;
-
+    text-decoration: none;
 }
 
 
 /* текст анонса */
 .post-content {
-    font-family: "Open Sans", Arial,sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 15px;
     line-height: 1.46;
     padding-bottom: 24px;
@@ -564,7 +632,7 @@ a {
 .post-date {
     color: #888888;
     display: inline-block;
-    padding-right: 12px;
+    margin-right: 12px;
 }
 
 
@@ -574,6 +642,7 @@ a {
     font-weight: 700;
     display: inline-block;
     margin-right: 15px;
+    font-style:normal;
 }
 
 
@@ -585,7 +654,7 @@ a {
 
 .sidebar-title{
     color: #000000;
-    line-height: 18px;
+    line-height: 1.28;
     font-size: 14px;
     text-transform: uppercase;
     text-align: center;
@@ -607,9 +676,10 @@ a {
 .new-post-link {
     color: #000000;
     line-height: 18px;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     margin: 0;
+    text-decoration: none;
 }
 
 
@@ -617,13 +687,11 @@ a {
 .newpost-conteiner {
     display: flex;
     flex-direction: row;
-    margin-bottom: 14px;
     align-items: flex-start;
-    line-height: 0;
 }
 
 .newpost-conteiner:not(:last-child){
-   margin-bottom: 21px;
+    margin-bottom: 22px;
 }
 
 /* дата новых постов */
@@ -641,7 +709,7 @@ a {
     display:flex;
 }
 
-.search-lable {
+.search-label {
     width:100%;
     display:flex;
     flex-wrap: nowrap;
@@ -670,7 +738,6 @@ a {
     font-size: 14px;
     text-transform: uppercase;
     color: #ffffff;
-    align-items: center;
     box-sizing: border-box;
 }
 
@@ -681,7 +748,7 @@ a {
     height: 1px;
 }
 
-.search-lable .mail-lable .search-button{
+.search-label .mail-lab .search-button{
     flex-grow:1;
 }
 
@@ -704,9 +771,6 @@ a {
 
 
 /* кнопка подписки */
-.mail-button {
-    width: 100%;
-}
 
 .form-row:nth-child(n+2){
 margin-top: 20px;
@@ -733,6 +797,7 @@ margin-top: 20px;
 .tags-list-item{
     font-weight: 700;
     margin-bottom: 5px;
+    margin-right: 4px;
 }
 
 /* линии в темах */
@@ -752,7 +817,7 @@ margin-top: 20px;
 
 
 /* список тем */
-.topic-list-item {
+.topic-link {
     font-weight: 700;
     padding-left: 0;
     margin-top: 0;
@@ -760,14 +825,17 @@ margin-top: 20px;
     font-size: 14px;
     text-transform: capitalize;
     color: black;
+    text-decoration: none;
+}
+
+.topic-list-item{
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 14px;
 }
 
-.topic-list-item:nth-child(n+2){
-    padding-top: 14px;
+.topic-list-item:not(:last-child){
+    margin-bottom: 14px;
 }
-
 
 .index {
     vertical-align: super;
@@ -793,6 +861,8 @@ margin-top: 20px;
 
 .shop-block{
     max-width: 347px;
+    display: flex;
+    flex-direction: column;
     }
 
 
@@ -806,7 +876,8 @@ margin-top: 20px;
 .shop-content {
     height: auto;
     border: solid;
-    color: #87784e;
+    color: #b9a565;
+    opacity: 60%;
     padding-top: 56px;
     padding-bottom: 30px;
     padding-left: 20px;
@@ -844,6 +915,7 @@ margin-top: 20px;
 
 .shop-line-link{
     color: #87784e;
+    text-decoration: none;
 }
 
 .shop-old-price{
@@ -925,6 +997,12 @@ margin-top: 20px;
 
 /* стилизация копирайт */
 .copyright {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.copyright-link{
+    text-decoration: none;
     font-size: 12px;
     color: #999999;
     margin-top: 74px;
