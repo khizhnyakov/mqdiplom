@@ -430,6 +430,7 @@ a{
     background-repeat: no-repeat;
     z-index: 999;
 }
+
 .popup{
     position: fixed;
     display: flex;
@@ -652,7 +653,6 @@ a{
 .menu {
     font-size: 13px;
     text-transform: uppercase;
-
 }
 
 .tags-menu-link{
@@ -879,7 +879,6 @@ a{
     font-size: 12px;
     margin-top: 25px;
     margin-bottom:50px;
-
 }
 
 /* стилизация дата */
@@ -1047,9 +1046,7 @@ margin-top: 20px;
     list-style-type: none;
     margin: 0;
     padding: 0;
-
 }
-
 
 .tags-list-item{
     font-weight: 700;
@@ -1101,6 +1098,8 @@ margin-top: 20px;
     color: #b59f5b;
     margin-left: 5px;
 }
+
+
 /* ----------------------------------------------блок shop */
 .shop-blocks {
     margin-left: auto;
@@ -1110,6 +1109,7 @@ margin-top: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .shop-image-block{
     padding-left: 24px;
     padding-right: 24px;
@@ -1152,19 +1152,18 @@ margin-top: 20px;
     line-height: 1.29;
 }
 
-    .shop-price-actual{
-        color: black;
-        text-transform: uppercase;
-        font-weight: 700;
-        position: relative;
-        font-size: 20px;
-        line-height: 1.2;
-    }
+.shop-price-actual{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    font-size: 20px;
+    line-height: 1.2;
+}
 
 .shop-txt{
     color: black;
-    font-size: 15px;
-}
+    font-size: 15px;}
 
 .shop-button{
     width: 140px;
