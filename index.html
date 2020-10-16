@@ -1,20 +1,57 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>diplom</title>
+    <title>doc</title>
 </head>
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
+<div class="popup popup-active">
+    <div class="popup-container"><div class="x"></div>
+    <div class="popup-content-containers">
+        <div class="popup-title">Ваш фидбек</div>
+        <div class="popup-container-interview-1">
+           <p class="popup-txt">Часто заходите на сайт?</p>
+            <div>
+            <select class="popup-select-interview-1">
+                <option selected>Никогда</option>
+                <option selected>Почти каждый день</option>
+                <option>Плевать хотел</option>
+                <option>Это не я</option>
+            </select>
+            </div>
+    </div>
+        <div class="popup-container-interview-2, block-content">
+            <p class="popup-txt">Вы подписаны на e-mail рассылку?</p>
+                <div class="radio-group">
+                    <label class="interviewChoice1"><input type="radio" class="radio" name="interview">
+                        <span class="radio-group-text">да</span></label>
+                    <label class="interviewChoice2"><input type="radio" class="radio" name="interview">
+                        <span class="radio-group-text">нет</span></label>
+                </div>
+        </div>
+        <div class="popup-container-interview-3, block-content">
+            <p class="popup-txt">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+            <form>
+                <div class="form-row"><label class="mail-label">
+                        <span class="visual-hidden">Введите адрес</span>
+                    <textarea class="input-popup" placeholder="Может, больше рецептов?"></textarea></label></div>
+            </form>
+        </div>
+        <button type="submit" class="button">Отправить</button>
+        </div>
+</div>
+</div>
 <header class="head">
     <div class="menu-container">
         <div class="header_top">
@@ -108,7 +145,7 @@
                     </address>
                 </div>
                 <div class="post-content">
-                    <p> Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
+                    <p class="post-content-txt"> Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
                 </div>
             </div>
         </article>
@@ -126,12 +163,12 @@
                     <time class="post-date" datetime="2019-06-10">
                         10 июня 2019
                     </time>
-                    <addres class="post-author">
+                    <address class="post-author">
                         Неизвестный автор
-                    </addres>
+                    </address>
                 </div>
                 <div class="post-content">
-                    <p>Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
+                    <p class="post-content-txt">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
                 </div>
             </div>
         </article>
@@ -148,12 +185,12 @@
                     <time class="post-date" datetime="2019-06-10">
                         10 июня 2019
                     </time>
-                    <addres class="post-author">
+                    <address class="post-author">
                         Неизвестный автор
-                    </addres>
+                    </address>
                 </div>
                 <div class="post-content">
-                    <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
+                    <p class="post-content-txt">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
                         Мы составили список лучших летних фестивалей по всему миру.</p>
                 </div>
             </div>
@@ -172,12 +209,12 @@
                     <time class="post-date" datetime="2019-06-10">
                         10 июня 2019
                     </time>
-                    <addres class="post-author">
+                    <address class="post-author">
                         Неизвестный автор
-                    </addres>
+                    </address>
                 </div>
                 <div class="post-content">
-                    <p> Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
+                    <p class="post-content-txt"> Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
                 </div>
             </div>
         </article>
@@ -196,9 +233,9 @@
                     <time class="post-date" datetime="2019-06-10">
                         10 июня 2019
                     </time>
-                    <addres class="post-author">
+                    <address class="post-author">
                         Неизвестный автор
-                    </addres>
+                    </address>
                 </div>
                 <div class="post-content">
                     <p>Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
@@ -270,8 +307,9 @@
                 <form action="search" method="get" class="sidebar-block search">
                     <label class="search-label">
                     <span class="visual-hidden">Поиск по сайту</span>
-                    <input name="form-search" class="input" placeholder="Найти..." type="search"><button type="submit" class="search-button button"><span class="visual-hidden">Нвйти</span></button>
-                    </label></form>
+                    <input name="form-search" class="input" placeholder="Найти..." type="search">
+                    </label> <button type="submit" class="search-button button"><span class="visual-hidden">Нвйти</span></button>
+                </form>
             <!-- рассылка -->
         <section class="sidebar-block">
             <H2 class="sidebar-title">Рассылка</H2>
@@ -303,16 +341,13 @@
         <section class="sidebar-block">
             <H2 class="sidebar-title">Темы</H2>
                             <ul class="topic-list">
-                                <li class="topic-list-item"><a class="topic-link" href="#0">красота</a>
-                                    <span class="index">
-                                    <a class="teg-link" href="#0">12</a>
-                                    </span></li>
-                                <li class="topic-list-item"><a class="topic-link" href="#0">здоровье</a><span class="index">4</span></li>
-                                <li class="topic-list-item"><a class="topic-link" href="#0">обоаз жизни</a><span class="index"><a class="teg-link" href="#0">145</a></span></li>
-                                <li class="topic-list-item"><a class="topic-link" href="#0">музыка</a><span class="index"><a class="teg-link" href="#0">28</a></span></li>
-                                <li class="topic-list-item"><a class="topic-link" href="#0">спорт</a><span class="index"><a class="teg-link" href="#0">62</a></span></li>
-                                <li class="topic-list-item"><a class="topic-link" href="#0">йога</a><span class="index"><a class="teg-link" href="#0">8</a></span>
-                                </li>
+                                <li class="topic-list-item"><a class="topic-link" href="#0">красота<span class="index">12</span></a></li>
+                                <li class="topic-list-item"><a class="topic-link" href="#0">здоровье<span class="index">4</span></a></li>
+                                <li class="topic-list-item"><a class="topic-link" href="#0">образ жизни<span class="index">145</span></a></li>
+
+                                <li class="topic-list-item"><a class="topic-link" href="#0">музыка<span class="index">28</span></a></li>
+                                <li class="topic-list-item"><a class="topic-link" href="#0">спорт<span class="index">62</span></a></li>
+                                <li class="topic-list-item"><a class="topic-link" href="#0">йога<span class="index">8</span></a></li>
                             </ul>
         </section>
     </aside> </div>
@@ -326,11 +361,11 @@
             <div class="shop-image-block">
             <picture>
             <source media="(max-width: 640px)"
-                    srcset="images/shop-item-mobile1.jpg" class="shop-image" alt="куклы">
+                    srcset="images/shop-item-mobile1.jpg" class="shop-image" alt="dolls">
             <source media="(min-width: 641px) and (max-width: 1200px)"
-                    srcset="images/shop-item-tablet1.jpg" class="shop-image" alt="куклы">
+                    srcset="images/shop-item-tablet1.jpg" class="shop-image" alt="dolls">
             <source media="(min-width: 1201px)"
-                    srcset="images/shop-item-desk1.jpg" class="shop-image" alt="куклы">
+                    srcset="images/shop-item-desk1.jpg" class="shop-image" alt="dolls">
             <img src="images/shop-item-desk1.jpg" class="shop-image" alt="Подушка">
             </picture>
                 </div>
