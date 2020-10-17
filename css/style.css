@@ -23,7 +23,7 @@ body {
     padding: 0;
 }
 
-h1, h2, h3,{
+h1, h2, h3{
     margin: 0;
     padding: 0;
 }
@@ -162,7 +162,7 @@ a{
     font-family: "Open Sans", Arial,sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.88rem
+    font-size: 0.88rem;
     line-height: 1.46;
 }
 
@@ -1211,7 +1211,7 @@ margin-top: 20px;
         max-width: 272px;
     }
     .sidebar-title{
-        font-size: 0.88;
+        font-size: 0.88rem;
         line-height: 2.14;
     }
     .menu-burger {
