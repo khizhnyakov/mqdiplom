@@ -1021,7 +1021,7 @@ margin-top: 20px;
     }
 }
 
-@media (min-width: 641px) and (max-width: 1200px) {
+@media (min-width: 641px) and (max-width: 1199px) {
     .popup-container{
         max-width:388px;
     }
@@ -1144,7 +1144,7 @@ margin-top: 20px;
     }
 }
 
-@media (min-width: 1201px)  {
+@media (min-width: 1201px){
     .popup-container{
         max-width:388px;
     }
