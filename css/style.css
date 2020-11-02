@@ -263,9 +263,6 @@ h3 {
     flex: auto;
 }
 
-.header-logo {
-    width: 184px;
-}
 
 .menu {
     font-size: 0.81rem;
@@ -948,16 +945,10 @@ margin-top: 20px;
         line-height: 1.38;
         margin-bottom: 218px;
     }
+
     .header-logo {
-        display: none;
-    }
-    .header-logo-640{
-        max-width: 270px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 280px;
         margin-top: 180px;
-        display:flex;
-        justify-content: center;
     }
 
     .menu-burger {
@@ -1056,9 +1047,11 @@ margin-top: 20px;
     .head {
         background-image: url(../images/banner-bg-tablet.jpg);
     }
-    .header-logo-640 {
-        display: none;
+
+    .header-logo {
+        width: 184px;
     }
+
     .menu-list-item {
         display: none;
     }
@@ -1181,9 +1174,11 @@ margin-top: 20px;
     .head {
         background-image: url(../images/banner-bg.jpg);
     }
-    .header-logo-640 {
-        display: none;
+
+    .header-logo {
+        width: 184px;
     }
+
     .head-title-container {
         margin:125px auto 0;
     }
