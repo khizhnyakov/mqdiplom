@@ -35,9 +35,7 @@ h3 {
 }
 
 /* --------------------------popup start */
-.hidden{
-    display: none;
-}
+
 
 .popup-bottom-close{
     display:flex;
@@ -63,23 +61,15 @@ h3 {
     z-index: 999;
     width: 100%;
     height: 100%;
+    content: "";
+    background-color: #010000;
+    opacity: 0.5;
 }
 .popup-container{
     background: #ffffff;
     z-index: 800;
 }
 
-.black {
-    content: "";
-    position: absolute;
-    background-color: #010000;
-    display: flex;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.5;
-}
 
 .popup-content-containers{
     padding:24px;
@@ -197,7 +187,7 @@ h3 {
     color: inherit;
 }
 .teg-link:hover {
-    color: #ffffff;
+    color: #b0afaf;
 }
 
 .container{
