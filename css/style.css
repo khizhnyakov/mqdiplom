@@ -17,7 +17,7 @@ body {
     font-family: "Open Sans", Arial,sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 0.94rem;
+    font-size: 1rem;
     line-height: 1.46;
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ h3 {
     display: none;
 }
 
-.x{
+.popup-bottom-close{
     display:flex;
     position:relative;
     top:-30px;
@@ -900,7 +900,7 @@ margin-top: 20px;
     .popup-container{
         max-width:330px;
     }
-    .x{
+    .popup-bottom-close{
         right:-300px;
     }
     .input-popup {
@@ -939,7 +939,6 @@ margin-top: 20px;
     }
     .container {
         max-width: 330px;
-        min-height: 550px;
     }
 
     .trend-blocks{
@@ -1017,7 +1016,7 @@ margin-top: 20px;
     .popup-container{
         max-width:388px;
     }
-    .x{
+    .popup-bottom-close{
         right:-360px;
     }
     .input-popup {
@@ -1141,7 +1140,7 @@ margin-top: 20px;
         max-width:388px;
     }
 
-    .x{
+    .popup-bottom-close{
         right:-360px;
     }
 
