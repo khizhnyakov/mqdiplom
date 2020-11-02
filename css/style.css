@@ -196,6 +196,9 @@ h3 {
     text-decoration: none;
     color: inherit;
 }
+.teg-link:hover {
+    color: #ffffff;
+}
 
 .container{
     padding:0 15px;
@@ -289,6 +292,9 @@ h3 {
     font-weight: 700;
     font-style: normal;
 }
+.tags-menu-link:hover {
+    color: #B59F5B;
+}
 
 
 /* сброс стилей списка меню */
@@ -308,6 +314,12 @@ h3 {
     font-weight: 400;
     font-style: normal;
 }
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+
 
 /* расстояния между пунктами меню */
 .menu-list-item:nth-child(n + 2) {
@@ -400,6 +412,7 @@ h3 {
     position: relative;
 }
 
+
 .trend-line-link{
     color: #ffffff;
     text-transform: uppercase;
@@ -408,6 +421,9 @@ h3 {
     position: relative;
     font-weight: 700;
     text-decoration: none;
+}
+.trend-line-link:hover {
+    color: #b9a565;
 }
 
 .trend-content{
@@ -489,6 +505,9 @@ h3 {
     text-transform: uppercase;
     text-decoration: none;
 }
+.post-title-link:hover {
+    color: #b9a565;
+}
 
 
 /* текст анонса */
@@ -560,6 +579,9 @@ h3 {
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+.new-post-link:hover {
+    color: #b9a565;
 }
 
 
@@ -705,6 +727,9 @@ margin-top: 20px;
     color: black;
     text-decoration: none;
 }
+.topic-link:hover {
+    color: #b9a565;
+}
 
 .topic-list-item{
     border-bottom: 1px solid #eeeeee;
@@ -843,6 +868,9 @@ margin-top: 20px;
     background-color: #3b5998;
     background-position: center;
 }
+.socials-link :hover {
+    color: #b9a565;
+}
 
 .socials-item:nth-child(n + 2) {
     margin-left: 30px;
@@ -851,6 +879,9 @@ margin-top: 20px;
 .socials-link-facebook {
     background-image: url("../svg/002-facebook-logo.svg");
     background-color: #f4f7f6;
+}
+.socials-link-facebook:hover {
+    color: #b9a565;
 }
 
 .socials-link-twitter {
@@ -894,6 +925,10 @@ margin-top: 20px;
     color: #999999;
     margin-top: 74px;
     text-align: center;
+}
+
+.copyright-link:hover {
+    color: #000000;
 }
 
 @media (max-width: 640px) {
@@ -957,6 +992,7 @@ margin-top: 20px;
         font-size: 1rem;
         line-height: 1.25;
     }
+
 
     .main {
         display: flex;
