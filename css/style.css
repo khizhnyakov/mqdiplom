@@ -36,6 +36,10 @@ h3 {
 
 /* --------------------------popup start */
 
+.hidden{
+    display: none;
+}
+
 
 .popup-bottom-close{
     display:flex;
