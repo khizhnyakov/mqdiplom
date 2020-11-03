@@ -937,6 +937,10 @@ margin-top: 20px;
         background-image: url(../images/banner-mobile.jpg);
     }
 
+    .header_top {
+        flex-direction: column-reverse;
+        margin-top: 150px;
+    }
     .head-title-container {
         margin:20px auto 0;
     }
@@ -946,13 +950,17 @@ margin-top: 20px;
         margin-bottom: 218px;
     }
 
+    .menu {
+        margin-left: auto;
+    }
+
     .header-logo {
-        width: 280px;
-        margin-top: 180px;
+        width: 320px;
     }
 
     .menu-burger {
         fill: #ffffff;
+        margin-left: auto;
     }
     .menu-list-item {
         display: none;
