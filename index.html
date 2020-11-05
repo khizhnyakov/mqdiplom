@@ -11,14 +11,15 @@
 <body>
 
 <div class="hidden">
-    <div class="popup">
-    <div class="popup-container"><div class="popup-bottom-close"></div>
+    <form class="popup">
+    <div class="popup-container">
+        <div class="popup-bottom-close"></div>
     <div class="popup-content-containers">
         <div class="popup-title">Ваш фидбек</div>
         <div class="popup-container-interview-1">
-           <p lable="popup-txt">Часто заходите на сайт?</p>
+            <p> <label for="popup-01">Часто заходите на сайт?</label></p>
             <div>
-            <select class="popup-select-interview-1">
+            <select class="popup-select-interview-1" id="popup-01">
                 <option >Никогда</option>
                 <option selected>Почти каждый день</option>
                 <option>Плевать хотел</option>
@@ -27,26 +28,26 @@
             </div>
     </div>
         <div class="popup-container-interview-2, block-content">
-            <p lable="popup-txt">Вы подписаны на e-mail рассылку?</p>
-                <div class="radio-group">
-                    <label class="interviewChoice1"><input type="radio" class="radio" name="interview">
+            <p><label for="popup-02">Вы подписаны на e-mail рассылку?</label></p>
+                <div class="radio-group" for="popup-02">
+                    <label class="interviewChoice1"><input type="radio" id="popup-02"  class="radio" name="interview">
                         <span class="radio-group-text">да</span></label>
                     <label class="interviewChoice2"><input type="radio" class="radio" name="interview">
                         <span class="radio-group-text">нет</span></label>
                 </div>
         </div>
-        <div class="popup-container-interview-3, block-content">
-            <p lable="popup-txt">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+        <div class="popup-container-interview-3 block-content">
+            <p> <label for="popup-03">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>></p>
             <form>
                 <div class="form-row"><label class="mail-label">
                         <span class="visual-hidden">Введите адрес</span>
-                    <textarea class="input-popup" placeholder="Может, больше рецептов?"></textarea></label></div>
+                    <textarea class="input-popup" id="popup-03" placeholder="Может, больше рецептов?"></textarea></label></div>
             </form>
         </div>
         <button type="submit" class="button">Отправить</button>
         </div>
 </div>
-</div>
+</form>
 </div>
 <header class="head">
     <div class="container">
